@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 0.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    min-height: 60vh;
+}
+
+.breed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breed-image-container {
+    text-align: center;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.breed-image-container img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.breed-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.breed-list li {
+    background: #ecf0f1;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.breed-list li:hover {
+    transform: translateY(-5px);
+    background: #e0e6e8;
+}
+
+.breed-list a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    display: block;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    margin-top: 2rem;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+.nav-select {
+    display: none;
+    width: 90%;
+    max-width: 320px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+@media (max-width: 640px) {
+    nav a {
+        display: none;
+    }
+    .nav-select {
+        display: inline-block;
+    }
+}
